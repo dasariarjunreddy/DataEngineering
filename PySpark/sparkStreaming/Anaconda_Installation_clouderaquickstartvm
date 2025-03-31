@@ -1,0 +1,62 @@
+1. Install JDK 8
+2. Install Anaconda in the Cloudera VM
+Go to the link below and download Python 3.7 Version
+https://www.anaconda.com/distribution/#download-section
+
+Open Terminal and change the permission for the downloaded script file 
+[cloudera@quickstart ~]$ cd Downloads/
+[cloudera@quickstart Downloads]$ chmod 777 Anaconda3-2019.10-Linux-x86_64.sh 
+[cloudera@quickstart Downloads]$ ./Anaconda3-2019.10-Linux-x86_64.sh 
+
+
+Anaconda will be installed by default in the location below
+[/home/cloudera/anaconda3] >>> 
+PREFIX=/home/cloudera/anaconda3
+
+3.  
+Download spark from the below link: 
+https://www.apache.org/dyn/closer.lua/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.6.tgz
+
+
+4. Start Anaconda Navigator
+Open Terminal 
+cd /home/cloudera/anaconda3
+./bin/anaconda-navigator
+
+Click on launch buttonin Anaconda navigator
+
+This will start your navigator and you can launch jupyter notebook by clicking on launch button in Anaconda Navigator. 
+
+The following text file will open.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1;url=http://localhost:8962/tree?token=27d4154cbaf8779cc5343dd1fdf1b1e07f38dacbd40e35c5" />
+    <title>Opening Jupyter Notebook</title>
+    <script>
+      setTimeout(function() {
+        window.location.href = "http://localhost:8962/tree?token=27d4154cbaf8779cc5343dd1fdf1b1e07f38dacbd40e35c5";
+      }, 1000);
+    </script>
+</head>
+<body>
+
+<p>
+    This page should redirect you to Jupyter Notebook. If it doesn't,
+    <a href="http://localhost:8962/tree?token=27d4154cbaf8779cc5343dd1fdf1b1e07f38dacbd40e35c5">click here to go to Jupyter</a>.
+</p>
+
+</body>
+</html>
+
+
+Copy the url and p[aste it in the web browser. You will get Jupyter web interface. Open the code and execute
+
+For Twitter Streaming:
+
+install tweepy using the following command:
+
+pip install tweepy
+
