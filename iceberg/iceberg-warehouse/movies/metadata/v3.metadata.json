@@ -1,0 +1,130 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "016addee-c71c-42c2-ad6e-9f9d961499ec",
+  "location" : "iceberg-warehouse/movies",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1726080654004,
+  "last-column-id" : 4,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "movie",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "year",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "ranking",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "year",
+      "transform" : "identity",
+      "source-id" : 3,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "TommyShelby",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 7334931249918322859,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 7334931249918322859,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 5624801734738711238,
+    "timestamp-ms" : 1726080453241,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1726080019634",
+      "added-data-files" : "122",
+      "added-records" : "302134",
+      "added-files-size" : "4423040",
+      "changed-partition-count" : "122",
+      "total-records" : "302134",
+      "total-files-size" : "4423040",
+      "total-data-files" : "122",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.4.3",
+      "app-id" : "local-1726080019634",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "iceberg-warehouse/movies/metadata/snap-5624801734738711238-1-18be2ef2-8376-46d7-960c-b2fac87623d8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 7334931249918322859,
+    "parent-snapshot-id" : 5624801734738711238,
+    "timestamp-ms" : 1726080654004,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1726080019634",
+      "added-data-files" : "6",
+      "deleted-data-files" : "122",
+      "added-records" : "48230",
+      "deleted-records" : "302134",
+      "added-files-size" : "681818",
+      "removed-files-size" : "4423040",
+      "changed-partition-count" : "122",
+      "total-records" : "48230",
+      "total-files-size" : "681818",
+      "total-data-files" : "6",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.4.3",
+      "app-id" : "local-1726080019634",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "iceberg-warehouse/movies/metadata/snap-7334931249918322859-1-cefb8f46-281d-44d0-8b0b-3ddb1b5a9ad5.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1726080453241,
+    "snapshot-id" : 5624801734738711238
+  }, {
+    "timestamp-ms" : 1726080654004,
+    "snapshot-id" : 7334931249918322859
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1726080304658,
+    "metadata-file" : "iceberg-warehouse/movies/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1726080453241,
+    "metadata-file" : "iceberg-warehouse/movies/metadata/v2.metadata.json"
+  } ]
+}
