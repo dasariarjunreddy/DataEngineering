@@ -9,7 +9,7 @@ Welcome to the DataEngineering repository! This repository contains various reso
 - [Setup Instructions](#setup-instructions)
 - [Learning Resources](#learning-resources)
   - [PySpark](#pyspark)
-    -[SparkStreaming](#sparkstreaming)   
+    - [SparkStreaming](#sparkstreaming)   
   - [Python](#python)
   - [SQL](#sql)
   - [Pandas](#pandas)
