@@ -1,0 +1,4 @@
+hive hadoop pig
+hive hive hive
+hadoop hive hadoop
+spark hive spark
